@@ -4,13 +4,12 @@ Plyer
 
 '''
 
-
 __all__ = ('accelerometer', 'audio', 'barometer', 'battery', 'call', 'camera',
            'compass', 'email', 'filechooser', 'flash', 'gps', 'gravity',
            'gyroscope', 'irblaster', 'light', 'orientation', 'notification',
            'proximity', 'sms', 'tts', 'uniqueid', 'vibrator', 'wifi',
            'temperature', 'humidity', 'spatialorientation', 'brightness',
-           'storagepath', 'processors', 'bluetooth', 'screenshot')
+           'storagepath', 'processors', 'speech', 'bluetooth', 'screenshot')
 
 __version__ = '1.3.2.dev0'
 
@@ -75,6 +74,9 @@ proximity = Proxy('proximity', facades.Proximity)
 
 #: Sms proxy to :class:`plyer.facades.Sms`
 sms = Proxy('sms', facades.Sms)
+
+#: Speech proxy to :class:`plyer.facades.Speech`
+speech = Proxy('speech', facades.Speech)
 
 #: TTS proxy to :class:`plyer.facades.TTS`
 tts = Proxy('tts', facades.TTS)
