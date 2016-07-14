@@ -8,7 +8,7 @@ Plyer
 __all__ = ('accelerometer', 'audio', 'barometer', 'battery', 'call', 'camera',
            'compass', 'email', 'filechooser', 'flash', 'gps', 'gravity',
            'gyroscope', 'irblaster', 'light', 'orientation', 'notification',
-           'proximity', 'sms', 'tts', 'uniqueid', 'vibrator', 'wifi',
+           'proximity', 'sms', 'stt', 'tts', 'uniqueid', 'vibrator', 'wifi',
            'temperature', 'humidity', 'spatialorientation', 'brightness',
            'storagepath', 'processors', 'bluetooth', 'screenshot')
 
@@ -75,6 +75,9 @@ proximity = Proxy('proximity', facades.Proximity)
 
 #: Sms proxy to :class:`plyer.facades.Sms`
 sms = Proxy('sms', facades.Sms)
+
+#: STT proxy to :class:`plyer.facades.STT`
+stt = Proxy('stt', facades.STT)
 
 #: TTS proxy to :class:`plyer.facades.TTS`
 tts = Proxy('tts', facades.TTS)
